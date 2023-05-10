@@ -1,0 +1,99 @@
+* {
+  /* border: 1px solid black; */
+}
+body {
+  background-color: rgb(76, 78, 122);
+}
+
+.app--container {
+  margin: 0 auto;
+}
+
+.app--wrapper {
+  background-color: rgb(117, 120, 168);
+
+  margin: 0 auto;
+  padding: 2em;
+
+  border-top-left-radius: 3em;
+  border-top-right-radius: 3em;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+.appSection__header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.appSection__newTask {
+  display: flex;
+  align-items: center;
+
+  gap: 1em;
+}
+.appSection__taskList {
+  padding-top: 1em;
+}
+.taskList--item {
+  background-color: rgba(222, 222, 222, 0.157);
+  color: rgb(214, 214, 214);
+
+  margin: 1em 0em;
+  padding: 1em 1.5em;
+
+  border-radius: 2em;
+}
+
+/* components */
+
+.userPhoto {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  border: 3px solid rgba(255, 255, 255, 0.674);
+}
+.userInfo {
+  margin-bottom: 2em;
+}
+.userInfo p {
+  color: rgb(250, 250, 250);
+}
+.userPhoto img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.form-control {
+  border: none;
+  border-radius: 2em;
+
+  height: 50px;
+  width: 70%;
+}
+.form-control::placeholder {
+  color: rgb(197, 197, 197);
+}
+
+.btn--addTask {
+  font-weight: bold;
+
+  background-color: rgb(221, 101, 230);
+  color: white;
+  border: none;
+  border-radius: 3em;
+
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  height: 50px;
+  width: 30%;
+
+  transition: 0.2s ease-in;
+}
+.btn--addTask__active {
+  box-shadow: rgba(236, 13, 236, 0.35) 0px 5px 15px;
+}
+.btn--addTask:hover {
+  border: 2px solid white;
+}
